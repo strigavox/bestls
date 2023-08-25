@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>Shorten Link</td>
+            <td>Victim's IP</td>
+            <td>Date Time</td>
+            <td>time Stamp</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["randomCode"]}}</td>
+               <td>{{row["victimIP"]}}</td>
+               <td> {{ row["DateTime_"]}}</td>
+               <td> {{ row["timeStamp_"]}}</td>
+
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>
